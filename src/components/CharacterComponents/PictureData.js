@@ -1,31 +1,6 @@
-import React from "react";
-
-import "./CardStyling.css";
-
-const Character = props => {
-  return (
-    <div className="container">
-      {props.charInfo.map((char, key) => {
-        return (
-          <div className="card">
-            <h1>{char.name}</h1>
-            <img
-              className="img-style"
-              src={PictureData[key]}
-              alt={`A picture of ${char.name}`}
-            />
-          </div>
-        );
-      })}
-    </div>
-  );
-};
-
-export default Character;
-
 const PictureData = [
   "https://uproxx.files.wordpress.com/2018/02/luke.jpg?quality=95&w=650&h=367",
-  "https://lumiere-a.akamaihd.net/v1/images/C-3PO-See-Threepio_68fe125c.jpeg",
+  "https://lumiere-a.akamaihd.net/v1/images/C-3PO-See-Threepio_68fe125c.jpeg?region=0%2C1%2C1408%2C792&width=960",
   "https://lumiere-a.akamaihd.net/v1/images/r2-d2-featured_ba3d1867.jpeg?region=0%2C48%2C1536%2C768&width=960",
   "https://cdn.catawiki.net/assets/marketing/stories-images/4347-9b40c93cc907345ca2dfdc22545725a0fa21c036-og_image.jpg",
   "https://s3.amazonaws.com/libapps/accounts/81381/images/leia.jpg",
