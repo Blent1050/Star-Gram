@@ -1,0 +1,10 @@
+.container {
+  border: 1px solid black;
+  width: 70%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.card {
+  border: 1px solid red;
+  margin: 10px;
+}

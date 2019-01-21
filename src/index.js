@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import StarwarsCardsContainer from "./components/StarwarsCardsContainer";
+
+//Components
+import NavBar from "./components/Navigation/NavBar";
+import StarwarsCardsContainer from "./components/CharacterComponents/StarwarsCardsContainer";
+import ATBackground from "./components/ATBackground";
+
+//Styles
 import "./styles.css";
 
 class App extends Component {
@@ -31,6 +37,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <NavBar />
+        <ATBackground />
         <StarwarsCardsContainer starwarsData={this.state.starwarsData} />
       </div>
     );
