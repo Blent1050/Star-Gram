@@ -1,8 +1,8 @@
 import React, { Component } from "react";
+import Character from "./Character";
 
 export default class StarwarsCardsContainer extends Component {
   render() {
-    console.log(this.props);
-    return <h1>SWCards</h1>;
+    return <Character charInfo={this.props.starwarsData} />;
   }
 }
